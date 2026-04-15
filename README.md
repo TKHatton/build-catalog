@@ -1,190 +1,215 @@
 # What I Build
 
-I design and deploy AI-powered systems. From multi-agent platforms to single-purpose automations, everything here solves real problems for real businesses. Everything is built, deployed, and running in production.
+I design and deploy AI-powered systems that run in production — multi-agent platforms, municipal compliance tools, content operations, and the internal infrastructure that keeps it all coordinated. Not prototypes. Not demos. Shipped.
 
-**Stack:** Python, Railway, Claude API, Supabase, Netlify, FastAPI, Twilio
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Railway](https://img.shields.io/badge/Railway-0B0D0E?logo=railway&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
+![Claude API](https://img.shields.io/badge/Claude_API-D97757?logo=anthropic&logoColor=white)
+![Twilio](https://img.shields.io/badge/Twilio-F22F46?logo=twilio&logoColor=white)
+
+**Jump to:** [Flagship Platforms](#flagship-platforms) · [Infrastructure](#infrastructure-i-built-for-myself) · [Hackathons](#hackathons) · [Teaching & Courses](#teaching--courses) · [Also Built](#also-built) · [Currently Building](#currently-building) · [Contact](#lets-work-together)
 
 ---
 
-## Platforms & Operating Systems
+## Flagship Platforms
 
-### Signal & Structure AI: AI Discoverability Platform
+### Signal & Structure AI — AI Discoverability Platform
 > Helps businesses get found and accurately represented by AI assistants like ChatGPT, Claude, and Gemini.
 
-Built a complete AI discoverability platform with four production MCP servers (Signal Watch, Signal Pulse, Signal Advisor, Knowledge Base) connected directly to Claude. The system scans websites for schema markup quality, checks AI platform mentions across all major models, and generates prioritized action plans.
+![Status](https://img.shields.io/badge/Status-Production-success) ![Started](https://img.shields.io/badge/Started-2023-informational) [![Live](https://img.shields.io/badge/Live-signalstructure.ai-blue)](https://signalstructure.ai)
 
-Includes a multi-tenant client portal with three role-based dashboards (owner, client, VA), automated lead generation, and a research-backed white paper on AI discoverability.
+Full AI discoverability platform with four production MCP servers (Signal Watch, Signal Pulse, Signal Advisor, Knowledge Base) connected directly into Claude. Scans websites for schema markup quality, checks AI platform mentions across every major model, and generates prioritized action plans. Multi-tenant client portal has three role-based dashboards (owner, client, VA), automated lead generation, and a research-backed white paper on AI discoverability.
 
-`Python` `FastAPI` `Supabase` `Railway` `Netlify` `MCP Protocol` `Claude API`
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white)
+![Supabase](https://img.shields.io/badge/-Supabase-3ECF8E?logo=supabase&logoColor=white)
+![Railway](https://img.shields.io/badge/-Railway-0B0D0E?logo=railway&logoColor=white)
+![MCP](https://img.shields.io/badge/-MCP_Protocol-D97757)
+![Claude API](https://img.shields.io/badge/-Claude_API-D97757?logo=anthropic&logoColor=white)
 
----
-
-### StormIQ: Municipal Compliance Platform
-> AI-powered tools for stormwater professionals and municipal operators.
-
-21-product platform for MS4 stormwater compliance. Features AI photo analysis using computer vision for field inspection reports, automated narrative generation from voice-to-text field notes, and compliance tracking dashboards.
-
-Currently recruiting first municipal partner for pilot deployment. Five-service Railway deployment: FastAPI backend, Next.js dashboard, PostgreSQL database, MinIO object storage, and background worker. Targeting 7,500+ MS4 operators nationwide.
-
-`Python` `FastAPI` `Next.js` `PostgreSQL` `MinIO` `Railway` `Gemini API` `Computer Vision`
+<!-- Screenshot: uncomment once image is added to /screenshots
+![Signal & Structure AI screenshot](screenshots/signal-structure.png)
+-->
 
 ---
 
-### Content Command Center: Multi-Brand Content Management
+### StormIQ — Municipal Compliance Platform
+> AI-powered tools for stormwater professionals and municipal operators. Hackathon submission: **Sewer Sentinel** (Google Gemini 3, $50K prize).
+
+![Status](https://img.shields.io/badge/Status-Deployed_·_Pilot_Recruitment-success) ![Started](https://img.shields.io/badge/Started-2026-informational) ![Hackathon](https://img.shields.io/badge/Google_Gemini_3-Submitted-yellow)
+
+21-product platform for MS4 stormwater compliance. AI photo analysis using computer vision for field inspection reports, automated narrative generation from voice-to-text field notes, and compliance tracking dashboards. Currently recruiting first municipal partner for pilot deployment. Five-service Railway deployment (FastAPI backend, Next.js dashboard, PostgreSQL, MinIO object storage, background worker). Targeting 7,500+ MS4 operators nationwide.
+
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![MinIO](https://img.shields.io/badge/-MinIO-C72E49?logo=minio&logoColor=white)
+![Railway](https://img.shields.io/badge/-Railway-0B0D0E?logo=railway&logoColor=white)
+![Gemini](https://img.shields.io/badge/-Gemini_API-8E75B2?logo=google&logoColor=white)
+
+<!-- Screenshot: uncomment once image is added to /screenshots
+![StormIQ screenshot](screenshots/stormiq.png)
+-->
+
+---
+
+### Content Command Center — Multi-Brand Content Operations
 > One system serving five brands with AI-powered content generation, scheduling, and engagement.
 
-Full content operations platform with automated prospecting (discovers leads via Google Places API), AI-powered response generation across platforms (LinkedIn, email, Skool, WhatsApp), and brand voice enforcement with banned word filtering.
+![Status](https://img.shields.io/badge/Status-Deployed-success) ![Started](https://img.shields.io/badge/Started-2026-informational)
 
-Includes Prospect Mail pipeline with auto-prospecting, draft generation, and scheduled sends. Each brand maintains its own voice profile, tone rules, and audience context.
+Full content ops platform with automated prospecting (Google Places API lead discovery), AI-powered response generation across LinkedIn, email, Skool, and WhatsApp, and brand voice enforcement with banned-word filtering. Includes the Prospect Mail pipeline (auto-prospecting, draft generation, scheduled sends). Each brand maintains its own voice profile, tone rules, and audience context.
 
-`Python` `FastAPI` `Railway` `Google Places API` `Claude API` `Supabase`
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white)
+![Railway](https://img.shields.io/badge/-Railway-0B0D0E?logo=railway&logoColor=white)
+![Supabase](https://img.shields.io/badge/-Supabase-3ECF8E?logo=supabase&logoColor=white)
+![Google Places](https://img.shields.io/badge/-Google_Places-4285F4?logo=google&logoColor=white)
+![Claude API](https://img.shields.io/badge/-Claude_API-D97757?logo=anthropic&logoColor=white)
+
+<!-- Screenshot: uncomment once image is added to /screenshots
+![Content Command Center screenshot](screenshots/ccc.png)
+-->
 
 ---
 
-### The Drop: AI Content Intelligence
+### The Drop — AI Content Intelligence
 > Replaces hours of video watching with a daily AI-curated digest from 21+ sources.
 
-Monitors YouTube channels and content sources via RSS, automatically transcribes and summarizes new content, and delivers a formatted daily digest. Voice Mode allows listening to summaries instead of reading. Topic-based discovery lets you request specific subjects and have the system find, transcribe, and summarize relevant content automatically.
+![Status](https://img.shields.io/badge/Status-Deployed_·_Voice_Mode_Live-success) ![Started](https://img.shields.io/badge/Started-2026-informational)
 
-`Python` `Railway` `YouTube API` `Whisper` `Claude API`
+Monitors YouTube channels and RSS sources, auto-transcribes and summarizes new content, delivers a formatted daily digest. Voice Mode for listening instead of reading. Topic-based discovery lets you request a subject and have the system find, transcribe, and summarize matching content automatically.
 
----
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+![Railway](https://img.shields.io/badge/-Railway-0B0D0E?logo=railway&logoColor=white)
+![YouTube API](https://img.shields.io/badge/-YouTube_API-FF0000?logo=youtube&logoColor=white)
+![Whisper](https://img.shields.io/badge/-Whisper-412991?logo=openai&logoColor=white)
+![Claude API](https://img.shields.io/badge/-Claude_API-D97757?logo=anthropic&logoColor=white)
 
-## AI Tools & Products
-
-### Opportunity Tracker: Revenue Dashboard
-> Track every open opportunity, deadline, and revenue thread across all ventures.
-
-CLI tool with Supabase backend that manages opportunities across five ventures. Add, update, list, and archive opportunities with auto-calculated priority based on deadline proximity and revenue potential. Daily HTML email summary highlights overdue items, cold leads, top revenue opportunities, and upcoming deadlines. Deployed on Railway as a cron job.
-
-Built and deployed April 14, 2026.
-
-`Python` `Typer` `Rich` `Supabase` `Railway` `smtplib`
+<!-- Screenshot: uncomment once image is added to /screenshots
+![The Drop screenshot](screenshots/the-drop.png)
+-->
 
 ---
 
-### Personal CRM: Relationship Intelligence
-> Never forget a conversation, follow-up, or connection again.
+### CueBoard — AI-Powered Zoom Meeting Plugin
+> Real-time meeting intelligence with audience engagement tools.
 
-Contact and relationship management system designed for a solo operator running multiple ventures. Tracks interactions, follow-ups, and relationship context across all business contacts. Links to opportunities for full pipeline visibility.
+![Semifinalist](https://img.shields.io/badge/Logitech_Hackathon-Semifinalist_·_Top_50_of_1%2C300%2B-gold) ![Status](https://img.shields.io/badge/Status-Advancing_to_Final-success) ![Started](https://img.shields.io/badge/Started-2026-informational)
 
-Built and deployed April 14, 2026.
+Zoom plugin with 34 actions: live flags, participant assignment, free-text notes, polls, transcript access, and full export. Built for the Logitech CueBoard hackathon — reached semifinalist round (top 50 of 1,300+ participants) and currently competing for the top 6 final round in Switzerland. Three-page interface: quick actions dashboard, keyboard shortcuts panel, and full engagement suite with poll URL injection into Zoom chat.
 
-`Python` `Supabase`
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Zoom SDK](https://img.shields.io/badge/-Zoom_SDK-2D8CFF?logo=zoom&logoColor=white)
+![Netlify](https://img.shields.io/badge/-Netlify-00C7B7?logo=netlify&logoColor=white)
 
----
-
-### Proof of Work: Build Documentation System
-> Automated capture of what you built, when, and how.
-
-System that documents completed builds with screenshots, descriptions, and technical details. Generates proof-of-work artifacts for portfolio use, client credibility, and hackathon submissions.
-
-Built and deployed April 14, 2026.
-
-`Python`
+<!-- Screenshot: uncomment once image is added to /screenshots
+![CueBoard screenshot](screenshots/cueboard.png)
+-->
 
 ---
 
-### CueBoard: AI-Powered Zoom Meeting Plugin
-> Real-time meeting intelligence with audience engagement tools. **Semifinalist: Top 50 of 1,300+ submissions.**
-
-Zoom plugin with 34 actions including live flags, participant assignment, free-text notes, polls, transcript access, and full export. Built for the Logitech CueBoard hackathon. Reached semifinalist round (top 50 out of 1,300+ participants) and currently competing for the top 6 final round.
-
-Three-page interface: quick actions dashboard, keyboard shortcuts panel, and full engagement suite with poll URL injection to Zoom chat.
-
-`JavaScript` `Zoom SDK` `Netlify`
-
----
-
-### Course Canon: AI Course Evaluator
+### Course Canon — AI Course & Presentation Evaluator
 > Evaluates presentations and teaching quality, gives structured feedback.
 
-AI-powered system that analyzes educational content for structure, engagement, learning objectives alignment, and delivery quality. Multiple audience-specific landing pages: pastors, school presenters, conference speakers, educators.
+![Status](https://img.shields.io/badge/Status-Deployed-success) ![Started](https://img.shields.io/badge/Started-2026-informational)
 
-`Python` `Claude API` `Railway`
+AI-powered system that analyzes educational content for structure, engagement, learning-objective alignment, and delivery quality. Multiple audience-specific landing pages for pastors, school presenters, conference speakers, and educators.
 
----
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+![Claude API](https://img.shields.io/badge/-Claude_API-D97757?logo=anthropic&logoColor=white)
+![Railway](https://img.shields.io/badge/-Railway-0B0D0E?logo=railway&logoColor=white)
 
-### PageSpeak: Browser Extension for Accessibility
-> Text-to-speech browser extension with intelligent reading capabilities.
-
-Chrome extension that reads any web content aloud. Articles, documents, PDFs. Built with Web Speech API for zero-cost TTS. Designed for accessibility and productivity, particularly for users with dyslexia or visual processing needs.
-
-`JavaScript` `Chrome Extension API` `Web Speech API`
-
----
-
-### FolderSort: AI File Organization
-> Drop files in, get them organized automatically.
-
-AI-powered file sorting that analyzes document content and organizes files into logical folder structures. Currently in beta.
-
-`Python` | Live on Stripe ($67)
+<!-- Screenshot: uncomment once image is added to /screenshots
+![Course Canon screenshot](screenshots/course-canon.png)
+-->
 
 ---
 
-### InboxToSheets: Email-to-Spreadsheet Automation
-> Connects email accounts, extracts structured data, outputs clean spreadsheets.
+## Infrastructure I Built For Myself
 
-Automated pipeline that monitors email inboxes, identifies structured data (invoices, receipts, confirmations, reports), and extracts it into organized spreadsheets without manual copy-paste.
+The systems that let me run multiple ventures in parallel without dropping context.
 
-`Python` | Live on Stripe ($67 DIY / $500 Done-For-You)
+### CORE — Persistent Memory & Decision System
+> The shared brain that powers every venture. Ongoing since April 2026.
 
----
+![Status](https://img.shields.io/badge/Status-Ongoing-success) ![Started](https://img.shields.io/badge/Started-April_2026-informational)
 
-## Automation Systems
+CORE is the unified markdown, YAML, and Supabase architecture that keeps every venture, decision, and deadline coordinated across sessions. Slash commands (`/log`, `/summary`) route new information to the right place — a living decisions log that's never pruned, a persistent status file across all projects, priorities, personal logistics, and per-venture context. Every tool I build and every session I run reads from CORE first, so nothing gets lost between days, projects, or ventures.
 
-### Prospect Mail: Automated Lead Generation Engine
-> Discovers, researches, and contacts potential clients on autopilot.
+This is the system that makes the rest of the catalog possible.
 
-End-to-end outreach automation: discovers local businesses via Google Places API, researches their AI readiness, generates personalized outreach emails, and sends on a daily schedule. Full pipeline runs autonomously on Railway with three daily cron jobs (prospect at 1 PM, draft at 2 PM, send at 8:47 AM).
+![Markdown](https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white)
+![YAML](https://img.shields.io/badge/-YAML-CB171E?logo=yaml&logoColor=white)
+![Supabase](https://img.shields.io/badge/-Supabase-3ECF8E?logo=supabase&logoColor=white)
+![Claude Code](https://img.shields.io/badge/-Claude_Code-D97757?logo=anthropic&logoColor=white)
 
-`Python` `Railway` `Google Places API` `Claude API` `SendGrid`
-
----
-
-### Signal Vault: Secure Credential Storage
-> Encrypted credential management for multi-service deployments.
-
-Secure storage system for API keys, tokens, and service credentials across multiple deployed applications. Built for managing credentials across Railway services. Submitted to hackathon.
-
-`Python` `Encryption` `Railway`
+<!-- Screenshot: uncomment once image is added to /screenshots
+![CORE screenshot](screenshots/core.png)
+-->
 
 ---
 
-## Education & Courses
-
-### 20+ Years of Teaching Experience
-
-I create and deliver AI education for audiences ranging from Girl Scouts to enterprise teams.
-
-**Courses Built:**
-
-- **Run Better Meetings with AI.** Complete course, production-ready.
-- **Start Smart: From Avoiding AI to AI Confidence.** 5-day email drip course.
-- **Complete Guide to AI for Over-Thinkers.** Self-paced course.
-- **AI and Emotional Intelligence.** Conference presentation.
-- **Building Agentic Systems That Actually Work.** Advanced course (90-120 min) on capability-scoped agent design, multi-layer infrastructure, and cost optimization.
-- **Agents Without the Jargon.** Beginner-friendly course that opens with a live demo before definitions.
-- **AI in the Wild.** Girl Scout AI badge curriculum across all age levels.
-
----
-
-## Architecture Work
-
-### MAOS: Meta-Agentic Operating System
+### MAOS — Meta-Agentic Operating System
 > 12-component modular multi-agent system architecture.
 
-Designed a complete multi-agent operating system with five layers: orchestration, intelligence, execution, memory, and meta. Each of the 12 components is independently deployable but works as a unified system. Built on the principle that 5-8 capability-scoped agents backed by strong infrastructure beats 40 single-task agents on cost, speed, accuracy, and reliability.
+![Status](https://img.shields.io/badge/Status-Architecture_Complete-informational) ![Started](https://img.shields.io/badge/Started-2026-informational)
 
-Architecture documented. Build sequence starts with schema-driven design.
+Complete multi-agent OS design across five layers: orchestration, intelligence, execution, memory, and meta. Each of the 12 components is independently deployable but works as a unified system. Built on the principle that 5–8 capability-scoped agents backed by strong infrastructure beats 40 single-task agents on cost, speed, accuracy, and reliability. Build sequence starts with schema-driven design.
+
+---
+
+## Hackathons
+
+| Hackathon | Project | Status |
+|-----------|---------|--------|
+| Logitech CueBoard | CueBoard Zoom Plugin | **Semifinalist — Top 50 of 1,300+, advancing to final round** |
+| Google Gemini 3 | **Sewer Sentinel** (StormIQ) | Submitted, awaiting results ($50K prize) |
+| Google Live Agent | Adaptive Drive | Submitted, awaiting results |
+| Auth0 | Signal Vault | Submitted, awaiting results |
+
+---
+
+## Teaching & Courses
+
+20+ years of teaching experience, now applied to AI education for audiences ranging from Girl Scouts to enterprise teams.
+
+- **Run Better Meetings with AI** — Complete course, production-ready.
+- **Start Smart: From Avoiding AI to AI Confidence** — 5-day email drip course.
+- **Complete Guide to AI for Over-Thinkers** — Self-paced course.
+- **AI and Emotional Intelligence** — Conference presentation.
+- **Building Agentic Systems That Actually Work** — 90–120 min advanced course on capability-scoped agent design, multi-layer infrastructure, and cost optimization.
+- **Agents Without the Jargon** — Beginner-friendly, opens with a live demo before definitions.
+- **AI in the Wild** — Girl Scout AI badge curriculum across all age levels.
+
+---
+
+## Also Built
+
+Shipped tools, automations, and products. Smaller in scope than the flagships above, bigger in number.
+
+- **Opportunity Tracker** — Revenue dashboard CLI with daily email summary. Shipped April 14, 2026. `Python` `Typer` `Supabase` `Railway`
+- **Personal CRM** — Relationship intelligence for a solo operator running multiple ventures. Shipped April 14, 2026. `Python` `Supabase`
+- **Proof of Work** — Automated build documentation with screenshots and technical details. Shipped April 14, 2026. `Python`
+- **PageSpeak** — Chrome text-to-speech extension for accessibility. Reads articles, documents, and PDFs aloud. Designed for dyslexia and visual processing needs. [Landing page](https://pagespeak.netlify.app/) · `JavaScript` `Chrome Extension API` `Web Speech API`
+- **InboxToSheets** — Email-to-spreadsheet automation. Monitors inboxes, extracts structured data from invoices/receipts/confirmations, outputs clean spreadsheets. [Live →](https://inbox2sheet.netlify.app/) · `Python`
+- **Prospect Mail** — End-to-end outreach automation with three daily cron jobs on Railway. `Python` `Google Places API` `Claude API` `SendGrid`
+- **Signal Vault** — Encrypted credential storage for multi-service Railway deployments. (Auth0 hackathon submission.) `Python` `Railway`
+- **Adaptive Drive** — Google Live Agent hackathon submission.
+- **Routine Anchor** — Nightly SMS health check-in. Code complete, pending Twilio activation. `Python` `Twilio`
+- **Build Catalog** — This repo.
 
 ---
 
 ## Currently Building
 
-New systems in active development. Details available on request.
+Active development. Details on request.
 
+- **FolderSort** — AI file organization. [Landing page live](https://foldersort.netlify.app/); finalizing Apple Developer integration before launch.
 - Automated daily briefing agent
 - Client onboarding automation
 - AI avatar content pipeline
@@ -192,19 +217,8 @@ New systems in active development. Details available on request.
 
 ---
 
-## Hackathon Track Record
-
-| Hackathon | Project | Status |
-|-----------|---------|--------|
-| Logitech CueBoard | CueBoard Zoom Plugin | **Semifinalist (Top 50 of 1,300+), advancing to final round** |
-| Google Gemini 3 | Sewer Signal (StormIQ) | Submitted, awaiting results ($50K prize) |
-| Google Live Agent | Adaptive Drive | Submitted, awaiting results |
-| Auth0 | Signal Vault | Submitted, awaiting results |
-
----
-
 ## Let's Work Together
 
 I build AI systems that actually run in production. Not prototypes, not demos. If you need agents, automations, or AI-powered platforms, let's talk.
 
-**Find me on:** [Contra](https://contra.com) | [LinkedIn](https://linkedin.com)
+**Find me on:** [Contra](https://contra.com/Lenise_Kenney) · [LinkedIn](https://www.linkedin.com/in/lenise-kenney/)
