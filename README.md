@@ -192,7 +192,7 @@ Complete multi-agent OS design across five layers: orchestration, intelligence, 
 
 Shipped tools, automations, and products. Smaller in scope than the flagships above, bigger in number.
 
-- **Daily Clarity** — AI-powered thinking assistant with 5 tools: Mind Dump (organize mental clutter), Find Words (say difficult things clearly), Decision Helper (think through choices without judgment), Write The Hard Thing (draft difficult communications), Quick Reset (2-minute grounding when overwhelmed). Warm, human tone — no corporate speak. Free mode uses localStorage ($0 cost), cloud mode adds user accounts. [Repo](https://github.com/TKHatton/Daily-Clarity) · `React` `TypeScript` `Gemini API` `Supabase` `Netlify`
+- **Daily Clarity** — AI-powered thinking assistant with 5 tools: Mind Dump (organize mental clutter), Find Words (say difficult things clearly), Decision Helper (think through choices without judgment), Write The Hard Thing (draft difficult communications), Quick Reset (2-minute grounding when overwhelmed). Warm, human tone — no corporate speak. Free mode uses localStorage ($0 cost), cloud mode adds user accounts. [Live](https://dailyclarity.netlify.app/) · [Repo](https://github.com/TKHatton/Daily-Clarity) · `React` `TypeScript` `Gemini API` `Supabase` `Netlify`
 - **Opportunity Tracker** — Revenue dashboard CLI with daily email summary. Shipped April 14, 2026. `Python` `Typer` `Supabase` `Railway`
 - **Personal CRM** — Relationship intelligence for a solo operator running multiple ventures. Shipped April 14, 2026. `Python` `Supabase`
 - **Proof of Work** — Automated build documentation with screenshots and technical details. Shipped April 14, 2026. `Python`
