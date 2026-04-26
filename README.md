@@ -165,7 +165,7 @@ Four Google Apps Scripts that read incoming emails, extract structured data, and
 ### FolderSort — Automated File Organization
 Desktop app that scans folders and sorts files into clean structures based on rules set once. Preview mode before anything moves. Full undo with backup manifest. File watcher for ongoing auto-sort. Duplicate and temp file cleanup advisor. Windows exe — no Python install needed.
 
-**$67 one-time** · [Landing page](https://foldersort.netlify.app/) · Gumroad listing coming soon
+**$97 one-time** · [Landing page](https://foldersort.netlify.app/) · Gumroad listing coming soon
 
 `Python` `PyInstaller` `CustomTkinter` `SQLite`
 
