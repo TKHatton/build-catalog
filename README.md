@@ -86,6 +86,13 @@ Next.js 14 web UI with Supabase brand library. Generates branded course outlines
 
 The systems that let me run five ventures in parallel without losing context, dropping leads, or missing deadlines. All deployed, all running daily.
 
+### Roger — Executive Function Command Layer
+Always-on-top desktop widget plus installable Android PWA, sharing a Supabase backend with no-login device-key sync. Reads my CORE markdown files as the source of truth and ranks priorities deterministically (deadline, money impact, started-but-unfinished, stalled-with-due-retry). Enforces 3-active-task max with a quick-hits lane, clickable definition-of-done checklists, and flips into a bright neon GO HOME ROGER focus alert when I wander — re-escalating every 30 minutes until I'm back. Voice input on both surfaces is local-only (faster-whisper on desktop, Web Speech API on mobile), built for APD and dyslexia. No close button by design.
+
+`Python` `pywebview` `Supabase` `faster-whisper` `Web Speech API` `PWA` `Netlify` · [Repo](https://github.com/TKHatton/Roger)
+
+---
+
 ### CORE — Persistent Memory & Decision System
 Never-pruned decisions log, cross-session status tracking, per-venture context files, personal logistics, and health-aware scheduling. Slash commands (`/log`, `/summary`, `/log-chat`) route every session's output to the right place automatically. Every tool I build reads from CORE first.
 
