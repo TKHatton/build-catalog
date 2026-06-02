@@ -218,6 +218,7 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 
 ## Also Built
 
+- **Claude Architect Study Hall** — PWA study companion for Claude Certified Architect Foundations exam. Leitner 5-box spaced repetition, 6 interactive widgets, day gating, review deck. Pairs with System Architect Exam Pro. Screen reader accessible. [Repo](https://github.com/TKHatton/Claude-Architect-Study-Hall) · `Vanilla JS` `ES Modules` `Supabase` `PWA`
 - **Daily Clarity** — AI thinking assistant with 5 tools: Mind Dump, Find Words, Decision Helper, Write The Hard Thing, Quick Reset. Free. [Live](https://dailyclarity.netlify.app/) · [Repo](https://github.com/TKHatton/Daily-Clarity) · `React` `TypeScript` `Gemini API`
 - **PageSpeak** — Chrome extension for text-to-speech accessibility. Reads articles, documents, and PDFs aloud. `JavaScript` `Chrome Extension API` `Web Speech API`
 - **Signal Vault** — Encrypted credential storage for multi-service Railway deployments. Auth0 hackathon submission. `Python` `Railway`
