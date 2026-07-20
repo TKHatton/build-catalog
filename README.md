@@ -38,6 +38,8 @@ Full AI discoverability platform with four production MCP servers (Signal Watch,
 
 `Python` `FastAPI` `Next.js` `PostgreSQL` `MinIO` `Railway` `Gemini API`
 
+<a href="https://stormiq.netlify.app"><img src="screenshots/stormiq_landing.png" alt="StormIQ landing page" width="100%"></a>
+
 ---
 
 ### Content Command Center: Multi-Brand Content Operations
