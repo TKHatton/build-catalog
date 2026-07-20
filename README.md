@@ -1,6 +1,6 @@
 # What I Build
 
-I design and deploy AI-powered systems that run in production — multi-agent platforms, municipal compliance tools, content operations, and the internal infrastructure that keeps it all coordinated. Not prototypes. Not demos. Shipped.
+I design and deploy AI-powered systems that run in production: multi-agent platforms, municipal compliance tools, content operations, and the internal infrastructure that keeps it all coordinated. Not prototypes. Not demos. Shipped.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
@@ -16,7 +16,7 @@ I design and deploy AI-powered systems that run in production — multi-agent pl
 
 ## Flagship Platforms
 
-### Signal & Structure AI — AI Discoverability Platform
+### Signal & Structure AI: AI Discoverability Platform
 > Helps businesses get found and accurately represented by AI assistants like ChatGPT, Claude, and Gemini.
 
 ![Status](https://img.shields.io/badge/Status-Production-success) ![Started](https://img.shields.io/badge/Started-2023-informational) [![Live](https://img.shields.io/badge/Live-signalstructure.ai-blue)](https://signalstructure.ai)
@@ -25,9 +25,11 @@ Full AI discoverability platform with four production MCP servers (Signal Watch,
 
 `Python` `FastAPI` `Supabase` `Railway` `MCP Protocol` `Claude API`
 
+<a href="https://signalstructure.ai"><img src="screenshots/signal-structure_home.png" alt="Signal & Structure AI homepage" width="100%"></a>
+
 ---
 
-### StormIQ — Municipal Compliance Platform
+### StormIQ: Municipal Compliance Platform
 > AI-powered tools for stormwater professionals and municipal operators.
 
 ![Status](https://img.shields.io/badge/Status-Deployed_·_Pilot_Recruitment-success) ![Started](https://img.shields.io/badge/Started-2026-informational)
@@ -38,7 +40,7 @@ Full AI discoverability platform with four production MCP servers (Signal Watch,
 
 ---
 
-### Content Command Center — Multi-Brand Content Operations
+### Content Command Center: Multi-Brand Content Operations
 > One system serving five brands with AI-powered content generation, scheduling, and automated outreach.
 
 ![Status](https://img.shields.io/badge/Status-Deployed-success) ![Started](https://img.shields.io/badge/Started-2026-informational)
@@ -49,7 +51,7 @@ Full content ops platform. Automated prospecting pipeline: Google Places API dis
 
 ---
 
-### The Drop — AI Content Intelligence
+### The Drop: AI Content Intelligence
 > Replaces hours of video watching with a daily AI-curated digest from 21+ sources.
 
 ![Status](https://img.shields.io/badge/Status-Deployed_·_Voice_Mode_Live-success) ![Started](https://img.shields.io/badge/Started-2026-informational)
@@ -60,7 +62,7 @@ Monitors YouTube channels and RSS sources, auto-transcribes and summarizes new c
 
 ---
 
-### CueBoard — Zoom Meeting Control Plugin
+### CueBoard: Zoom Meeting Control Plugin
 > Hardware button surface for Zoom meeting management. Logitech MX Creative Console plugin.
 
 ![Semifinalist](https://img.shields.io/badge/Logitech_Hackathon-Semifinalist_·_Top_50_of_1%2C300%2B-gold) ![Status](https://img.shields.io/badge/Status-Functional-informational)
@@ -71,7 +73,7 @@ C#/.NET 8 plugin for the Logitech MX Creative Console. 34 mapped actions across 
 
 ---
 
-### Course Canon — AI Course & Presentation Evaluator
+### Course Canon: AI Course & Presentation Evaluator
 > Evaluates presentations and teaching quality, gives structured feedback.
 
 ![Status](https://img.shields.io/badge/Status-Deployed-success) ![Started](https://img.shields.io/badge/Started-2026-informational)
@@ -82,18 +84,18 @@ Next.js 14 web UI with Supabase brand library. Generates branded course outlines
 
 ---
 
-## Life OS — Personal Infrastructure
+## Life OS: Personal Infrastructure
 
 The systems that let me run five ventures in parallel without losing context, dropping leads, or missing deadlines. All deployed, all running daily.
 
-### Roger — Executive Function Command Layer
-Always-on-top desktop widget plus installable Android PWA, sharing a Supabase backend with no-login device-key sync. Reads my CORE markdown files as the source of truth and ranks priorities deterministically (deadline, money impact, started-but-unfinished, stalled-with-due-retry). Enforces 3-active-task max with a quick-hits lane, clickable definition-of-done checklists, and flips into a bright neon GO HOME ROGER focus alert when I wander — re-escalating every 30 minutes until I'm back. Voice input on both surfaces is local-only (faster-whisper on desktop, Web Speech API on mobile), built for APD and dyslexia. No close button by design.
+### Roger: Executive Function Command Layer
+Always-on-top desktop widget plus installable Android PWA, sharing a Supabase backend with no-login device-key sync. Reads my CORE markdown files as the source of truth and ranks priorities deterministically (deadline, money impact, started-but-unfinished, stalled-with-due-retry). Enforces 3-active-task max with a quick-hits lane, clickable definition-of-done checklists, and flips into a bright neon GO HOME ROGER focus alert when I wander, re-escalating every 30 minutes until I'm back. Voice input on both surfaces is local-only (faster-whisper on desktop, Web Speech API on mobile), built for APD and dyslexia. No close button by design.
 
 `Python` `pywebview` `Supabase` `faster-whisper` `Web Speech API` `PWA` `Netlify` · [Repo](https://github.com/TKHatton/Roger)
 
 ---
 
-### CORE — Persistent Memory & Decision System
+### CORE: Persistent Memory & Decision System
 Never-pruned decisions log, cross-session status tracking, per-venture context files, personal logistics, and health-aware scheduling. Slash commands (`/log`, `/summary`, `/log-chat`) route every session's output to the right place automatically. Every tool I build reads from CORE first.
 
 `Markdown` `YAML` `Claude Code`
@@ -136,7 +138,7 @@ Relationship intelligence for a solo operator across 24 contacts: family, leads,
 ---
 
 ### Client Onboarding
-CLI that adds a new client to the CRM, creates an Opportunity Tracker entry, and sends a venture-specific welcome email — all in one command. Four ventures supported: DJ Academy, Course Cannon, Digital Jaywalking, StormIQ. Each has its own HTML email template and tone.
+CLI that adds a new client to the CRM, creates an Opportunity Tracker entry, and sends a venture-specific welcome email, all in one command. Four ventures supported: DJ Academy, Course Cannon, Digital Jaywalking, StormIQ. Each has its own HTML email template and tone.
 
 `Python` `Supabase` `Resend` · [Repo](https://github.com/TKHatton/client-onboarding)
 
@@ -160,17 +162,19 @@ Next.js 14 + SQLite dashboard tracking income, expenses, burn rate, and projecte
 
 Tools I built, packaged, and sell.
 
-### InboxToSheet — Email-to-Spreadsheet Automation
-Four Google Apps Scripts that read incoming emails, extract structured data, and write it to the correct spreadsheet tab automatically — every 5 minutes, no manual input. Security hardening, daily validation, Excel migration tool, and an AI customization prompt included. No coding required.
+### InboxToSheet: Email-to-Spreadsheet Automation
+Four Google Apps Scripts that read incoming emails, extract structured data, and write it to the correct spreadsheet tab automatically, every 5 minutes, no manual input. Security hardening, daily validation, Excel migration tool, and an AI customization prompt included. No coding required.
 
 **$67 one-time** · [Landing page](https://inbox2sheet.netlify.app/) · [Buy on Gumroad](https://jaywalker73.gumroad.com/l/inbox2sheets)
 
 `Google Apps Script` `Gmail API` `Google Sheets API`
 
+<a href="https://inbox2sheet.netlify.app/"><img src="screenshots/inboxtosheet_landing.png" alt="InboxToSheet landing page" width="100%"></a>
+
 ---
 
-### FolderSort — Automated File Organization
-Desktop app that scans folders and sorts files into clean structures based on rules set once. Preview mode before anything moves. Full undo with backup manifest. File watcher for ongoing auto-sort. Duplicate and temp file cleanup advisor. Windows exe — no Python install needed.
+### FolderSort: Automated File Organization
+Desktop app that scans folders and sorts files into clean structures based on rules set once. Preview mode before anything moves. Full undo with backup manifest. File watcher for ongoing auto-sort. Duplicate and temp file cleanup advisor. Windows exe, no Python install needed.
 
 **$97 one-time** · [Landing page](https://foldersort.netlify.app/) · Gumroad listing coming soon
 
@@ -178,7 +182,7 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 
 ---
 
-### Protect Your Genius — Book
+### Protect Your Genius: Book
 *Using AI Without Diluting Your Voice.* Thought leadership on maintaining creative and intellectual identity in an AI-augmented world. Kindle published April 22, 2026. Paperback launch May 4, 2026.
 
 [Kindle on Amazon](https://amazon.com) · Paperback May 4, 2026
@@ -187,7 +191,7 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 
 ## Infrastructure
 
-### MAOS — Meta-Agentic Operating System
+### MAOS: Meta-Agentic Operating System
 12-component modular multi-agent system architecture across five layers: orchestration, intelligence, execution, memory, and meta. Blueprint complete. Build sequence starts with schema-driven design. Foundation for all future agent work.
 
 ---
@@ -196,7 +200,7 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 
 | Hackathon | Project | Result |
 |-----------|---------|--------|
-| Logitech CueBoard | CueBoard Zoom Plugin | Semifinalist — Top 50 of 1,300+ |
+| Logitech CueBoard | CueBoard Zoom Plugin | Semifinalist: Top 50 of 1,300+ |
 | Google Gemini 3 ($50K) | Sewer Sentinel (StormIQ) | Did not place |
 | Google Live Agent | Adaptive Drive | Results pending |
 | Auth0 | Signal Vault | Results pending |
@@ -207,24 +211,27 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 
 20+ years of teaching experience, now applied to AI education across Girl Scouts, enterprise teams, and working professionals.
 
-- **Building Agentic Systems That Actually Work** — 90–120 min advanced course on capability-scoped agent design, multi-layer infrastructure, and cost optimization
-- **Agents Without the Jargon** — Beginner-friendly, opens with a live demo before definitions
-- **Run Better Meetings with AI** — Half-day workshop for meeting-heavy professionals
-- **AI in the Wild** — Girl Scout AI badge curriculum across all age levels
-- **Start Smart: From Avoiding AI to AI Confidence** — 5-day email drip course
-- **AI and Emotional Intelligence** — Conference presentation
+- **Building Agentic Systems That Actually Work**: 90–120 min advanced course on capability-scoped agent design, multi-layer infrastructure, and cost optimization
+- **Agents Without the Jargon**: Beginner-friendly, opens with a live demo before definitions
+- **Run Better Meetings with AI**: Half-day workshop for meeting-heavy professionals
+- **AI in the Wild**: Girl Scout AI badge curriculum across all age levels
+- **Start Smart: From Avoiding AI to AI Confidence**: 5-day email drip course
+- **AI and Emotional Intelligence**: Conference presentation
 
 ---
 
 ## Also Built
 
-- **Claude Architect Study Hall** — PWA study companion for Claude Certified Architect Foundations exam. Leitner 5-box spaced repetition, 6 interactive widgets, day gating, review deck. Pairs with System Architect Exam Pro. Screen reader accessible. [Repo](https://github.com/TKHatton/Claude-Architect-Study-Hall) · `Vanilla JS` `ES Modules` `Supabase` `PWA`
-- **Daily Clarity** — AI thinking assistant with 5 tools: Mind Dump, Find Words, Decision Helper, Write The Hard Thing, Quick Reset. Free. [Live](https://dailyclarity.netlify.app/) · [Repo](https://github.com/TKHatton/Daily-Clarity) · `React` `TypeScript` `Gemini API`
-- **PageSpeak** — Chrome extension for text-to-speech accessibility. Reads articles, documents, and PDFs aloud. `JavaScript` `Chrome Extension API` `Web Speech API`
-- **Signal Vault** — Encrypted credential storage for multi-service Railway deployments. Auth0 hackathon submission. `Python` `Railway`
-- **Proof of Work** — Build documentation CLI. Captures projects with screenshots, tech stack, outcomes in under 60 seconds. [Repo](https://github.com/TKHatton/proof-of-work) · `Python`
-- **Adaptive Drive** — Google Live Agent hackathon submission.
-- **Build Catalog** — This repo. The public record of everything above.
+- **Claude Architect Study Hall**: PWA study companion for Claude Certified Architect Foundations exam. Leitner 5-box spaced repetition, 6 interactive widgets, day gating, review deck. Pairs with System Architect Exam Pro. Screen reader accessible. [Repo](https://github.com/TKHatton/Claude-Architect-Study-Hall) · `Vanilla JS` `ES Modules` `Supabase` `PWA`
+- **Daily Clarity**: AI thinking assistant with 5 tools: Mind Dump, Find Words, Decision Helper, Write The Hard Thing, Quick Reset. Free. [Live](https://dailyclarity.netlify.app/) · [Repo](https://github.com/TKHatton/Daily-Clarity) · `React` `TypeScript` `Gemini API`
+
+  <a href="https://dailyclarity.netlify.app/"><img src="screenshots/daily-clarity_live.png" alt="Daily Clarity landing page" width="49%"></a> <a href="https://dailyclarity.netlify.app/"><img src="screenshots/2026-04-19_daily-clarity_dashboard.png" alt="Daily Clarity dashboard" width="49%"></a>
+
+- **PageSpeak**: Chrome extension for text-to-speech accessibility. Reads articles, documents, and PDFs aloud. `JavaScript` `Chrome Extension API` `Web Speech API`
+- **Signal Vault**: Encrypted credential storage for multi-service Railway deployments. Auth0 hackathon submission. `Python` `Railway`
+- **Proof of Work**: Build documentation CLI. Captures projects with screenshots, tech stack, outcomes in under 60 seconds. [Repo](https://github.com/TKHatton/proof-of-work) · `Python`
+- **Adaptive Drive**: Google Live Agent hackathon submission.
+- **Build Catalog**: This repo. The public record of everything above.
 
 ---
 
@@ -233,3 +240,5 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 I build AI systems that actually run in production. Not prototypes, not demos. If you need agents, automations, or AI-powered platforms, let's talk.
 
 **Find me on:** [Contra](https://contra.com/Lenise_Kenney) · [LinkedIn](https://www.linkedin.com/in/lenise-kenney/) · [Digital Jaywalking](https://digitaljaywalking.com)
+
+<a href="https://digitaljaywalking.com"><img src="screenshots/digitaljaywalking_home.png" alt="Digital Jaywalking studio homepage" width="100%"></a>
