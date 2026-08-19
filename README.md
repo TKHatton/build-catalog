@@ -97,6 +97,19 @@ Next.js 14 web UI with Supabase brand library. Generates branded course outlines
 
 ---
 
+### OnboardFlow: Autonomous Employee Onboarding Agent
+> Reasons about a new hire's role and department instead of running a fixed script, then executes the onboarding across every connected tool.
+
+![Status](https://img.shields.io/badge/Status-Functional-informational) ![Started](https://img.shields.io/badge/Started-2026-informational) [![Repo](https://img.shields.io/badge/Repo-Public-blue)](https://github.com/TKHatton/onboardflow)
+
+Gemini-powered agent that reads a new hire's role and decides which tools the onboarding actually needs, in what order, rather than following a hardcoded checklist. Orchestrates Jira, GitHub, Slack, Google Calendar, email, CRM, and Asana behind a FastAPI backend, with every step and result streamed live to a React UI over Server-Sent Events. Firestore holds the full audit trail for compliance. Event-driven via Pub/Sub for async, scalable processing.
+
+`Python` `FastAPI` `React` `Gemini API` `Google ADK` `Firestore` `Server-Sent Events`
+
+[Repo](https://github.com/TKHatton/onboardflow)
+
+---
+
 ### Cayenne Watch: Nationwide Vehicle Monitor
 > Nationwide monitor for used Porsche Cayenne listings, built as a favor and shipped as a packaged, cross-platform product.
 
