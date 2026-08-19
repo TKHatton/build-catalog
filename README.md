@@ -42,12 +42,23 @@ Full AI discoverability platform with four production MCP servers (Signal Watch,
 
 ---
 
-### Content Command Center: Multi-Brand Content Operations
-> One system serving five brands with AI-powered content generation, scheduling, and automated outreach.
+### Marketing OS: Multi-Tenant Marketing Platform
+> One pipeline serving both my own brands and outside clients as tenants, with service level configured per tenant instead of forked into separate code paths.
 
 ![Status](https://img.shields.io/badge/Status-Deployed-success) ![Started](https://img.shields.io/badge/Started-2026-informational)
 
-Full content ops platform. Automated prospecting pipeline: Google Places API discovers leads at 1 PM, email scraper pulls contacts, Signal Engine scores them, AI drafts outreach at 2 PM, approved emails send at 8:47 AM next day. Brand voice enforcement across LinkedIn, email, Skool, and Circle with banned-word filtering and per-brand tone rules. Each of five ventures has its own sender domain, voice profile, and audience context.
+Cross-brand marketing system built on a markdown/YAML truth layer with Supabase for operational state and fail-closed, per-tenant row-level security. A Cloudflare Worker handles approve/reject/edit-request and click-tracking routes; a daily GitHub Actions cron drives dispatch through a two-phase commit (approved to dispatching to published) with proven stuck-job recovery. **Sherman**, a client-facing AI brand-operations persona, handles tenant communication. The **Campaign Concept agent** is a standalone sellable product: it researches a brand and publishes a branded, pitch-ready concept page hands-off. Supersedes an earlier five-brand content-ops platform (Content Command Center, now scoped down to prospecting only).
+
+`Python` `Cloudflare Workers` `Supabase` `GitHub Actions` `Claude API` `Resend` · [Repo](https://github.com/TKHatton/Marketing-OS)
+
+---
+
+### Content Command Center: Automated Prospecting Pipeline
+> Lead discovery and cold outreach pipeline for Digital Jaywalking.
+
+![Status](https://img.shields.io/badge/Status-Deployed_·_Prospecting_Only-success) ![Started](https://img.shields.io/badge/Started-2026-informational)
+
+Automated prospecting pipeline: Google Places API discovers leads at 1 PM, an email scraper pulls contacts, Signal Engine scores them, AI drafts outreach at 2 PM, and approved emails send at 8:47 AM the next day. Its earlier content-generation, scheduling, and multi-brand ambitions were absorbed into Marketing OS above.
 
 `Next.js` `Python` `Supabase` `Railway` `Google Places API` `Claude API` `Resend`
 
@@ -86,14 +97,41 @@ Next.js 14 web UI with Supabase brand library. Generates branded course outlines
 
 ---
 
+### Cayenne Watch: Nationwide Vehicle Monitor
+> Nationwide monitor for used Porsche Cayenne listings, built as a favor and shipped as a packaged, cross-platform product.
+
+![Status](https://img.shields.io/badge/Status-Shipped_·_Delivered-success) ![Started](https://img.shields.io/badge/Started-2026-informational) [![Repo](https://img.shields.io/badge/Repo-Public-blue)](https://github.com/TKHatton/cayenne-watch)
+
+Watches 9 listing sources nationwide, dedupes the same vehicle appearing across multiple sites, and scores price against a same-trim/same-year cohort so a fair deal is obvious at a glance. Tiered alerts keep 50-150 daily listings from becoming noise. Drafts outreach messages but never sends without a human tap. Zero-cost architecture running free on the end user's own machine via Docker, with cross-platform launchers (Mac `.command` / Windows `.bat`) built without knowing in advance which OS the recipient would use. 415 tests passing. Delivered with a 4-video narrated setup playlist and a self-serve troubleshooting doc.
+
+`Python` `Docker` `SQLite`
+
+[Repo](https://github.com/TKHatton/cayenne-watch)
+
+---
+
 ## Life OS: Personal Infrastructure
 
 The systems that let me run five ventures in parallel without losing context, dropping leads, or missing deadlines. All deployed, all running daily.
 
-### Roger: Executive Function Command Layer
-Always-on-top desktop widget plus installable Android PWA, sharing a Supabase backend with no-login device-key sync. Reads my CORE markdown files as the source of truth and ranks priorities deterministically (deadline, money impact, started-but-unfinished, stalled-with-due-retry). Enforces 3-active-task max with a quick-hits lane, clickable definition-of-done checklists, and flips into a bright neon GO HOME ROGER focus alert when I wander, re-escalating every 30 minutes until I'm back. Voice input on both surfaces is local-only (faster-whisper on desktop, Web Speech API on mobile), built for APD and dyslexia. No close button by design.
+### Roger: Executive Function Command Layer (Retired)
+Always-on-top desktop widget plus installable Android PWA, sharing a Supabase backend with no-login device-key sync. Reads my CORE markdown files as the source of truth and ranks priorities deterministically (deadline, money impact, started-but-unfinished, stalled-with-due-retry). Enforces 3-active-task max with a quick-hits lane, clickable definition-of-done checklists, and flips into a bright neon GO HOME ROGER focus alert when I wander, re-escalating every 30 minutes until I'm back. Voice input on both surfaces is local-only (faster-whisper on desktop, Web Speech API on mobile), built for APD and dyslexia. No close button by design. Retired in favor of Minkus below.
 
 `Python` `pywebview` `Supabase` `faster-whisper` `Web Speech API` `PWA` `Netlify` · [Repo](https://github.com/TKHatton/Roger)
+
+---
+
+### Minkus: Voice-First Executive Function Assistant
+Rebuilt fresh on top of Roger's design spec and replaced it as my daily driver: an always-listening thinking partner with a floating desktop widget, offline wake-word detection (Vosk, nothing leaves the device pre-wake), and live Deepgram/Cartesia voice in and out. Reads CORE for priorities and current focus, runs a spoken morning brief every day at 7:35 AM, and remembers a rolling window of conversation plus a standing voice/communication-style profile. Ships its own paid-agent intake pipeline (Stripe to email delivery), an ops-day content digest that finds and delivers marketing drafts without ever writing them itself, and a bridge to a second, separately-hosted execution agent (Hermes) for delegated work. 672 tests green, strict TDD throughout.
+
+`Python` `Supabase` `Deepgram` `Cartesia` `Vosk` `SQLite` · [Repo](https://github.com/TKHatton/Minkus)
+
+---
+
+### Stir: Movement-Break Companion
+A Rust desktop app for a chronic-illness energy envelope, not a productivity gimmick: an always-on-top floating teddy bear that prompts gentle movement breaks and refuses to fake the data. The core loop (rest, get up, move, sit, rate 1-10, log) never auto-starts the timer, it waits for an explicit "I'm up" press, because pacing without shame mattered more than engagement. Multi-monitor position memory, tray controls, crash recovery, full audio/silent parity, and a session log written straight to SQLite through Rust. Phase 1 shipped and running daily; architecture is intentionally schema-agnostic so later phases (snooze, flare/go-easy streak protection, adaptive pacing) are mostly frontend work.
+
+`Rust` `Tauri` `JavaScript` `SQLite` · [Repo](https://github.com/TKHatton/stir)
 
 ---
 
@@ -230,6 +268,8 @@ Desktop app that scans folders and sorts files into clean structures based on ru
   <a href="https://dailyclarity.netlify.app/"><img src="screenshots/daily-clarity_live.png" alt="Daily Clarity landing page" width="49%"></a> <a href="https://dailyclarity.netlify.app/"><img src="screenshots/2026-04-19_daily-clarity_dashboard.png" alt="Daily Clarity dashboard" width="49%"></a>
 
 - **PageSpeak**: Chrome extension for text-to-speech accessibility. Reads articles, documents, and PDFs aloud. `JavaScript` `Chrome Extension API` `Web Speech API`
+- **Tip of the Hatton**: Interactive price calculator and service-request form for a freelance brand. Live running total across websites, social management, AI coaching, and custom builds; Netlify Forms captures every submission, no backend. [Repo](https://github.com/TKHatton/tip-of-the-hatton) · `HTML` `JavaScript` `Netlify Forms`
+- **Migration Result Finder**: Companion lookup tool for The Migration course, matching a reader's situation to the right next step. [Live](https://results-generator.netlify.app/) · `JavaScript` `Netlify`
 - **Signal Vault**: Encrypted credential storage for multi-service Railway deployments. Auth0 hackathon submission. `Python` `Railway`
 - **Proof of Work**: Build documentation CLI. Captures projects with screenshots, tech stack, outcomes in under 60 seconds. [Repo](https://github.com/TKHatton/proof-of-work) · `Python`
 - **Adaptive Drive**: Google Live Agent hackathon submission.
