@@ -21,9 +21,9 @@ I design and deploy AI-powered systems that run in production: multi-agent platf
 
 ![Status](https://img.shields.io/badge/Status-Production-success) ![Started](https://img.shields.io/badge/Started-2023-informational) [![Live](https://img.shields.io/badge/Live-signalstructure.ai-blue)](https://signalstructure.ai)
 
-Full AI discoverability platform with four production MCP servers (Signal Watch, Signal Pulse, Signal Advisor, Knowledge Base) connected directly into Claude. Scans websites for schema markup quality, checks AI platform mentions across every major model, and generates prioritized action plans. Multi-tenant client portal has three role-based dashboards (owner, client, VA), automated lead generation, and a research-backed white paper on AI discoverability.
+Full AI discoverability platform with four production MCP servers (Signal Watch, Signal Pulse, Signal Advisor, Knowledge Base) connected directly into Claude. Scans websites for schema markup quality, checks AI platform mentions across every major model, and generates prioritized action plans. Multi-tenant client portal has three role-based dashboards (owner, client, VA), automated lead generation, and a research-backed white paper on AI discoverability. The public site also registers its own WebMCP tools directly on the page (`get_business_facts`, `get_services`, `recommend_service`, `ask_advisor`, `get_our_score_history`, and one action tool that always confirms with the visitor before it does anything), so a browser AI agent can query the business and act on a visitor's behalf without guessing.
 
-`Python` `FastAPI` `Supabase` `Railway` `MCP Protocol` `Claude API`
+`Python` `FastAPI` `Supabase` `Railway` `MCP Protocol` `WebMCP` `Claude API`
 
 <a href="https://signalstructure.ai"><img src="screenshots/signal-structure_home.png" alt="Signal & Structure AI homepage" width="100%"></a>
 
@@ -262,9 +262,9 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 ---
 
 ### Protect Your Genius: Book
-*Using AI Without Diluting Your Voice.* Thought leadership on maintaining creative and intellectual identity in an AI-augmented world. Kindle published April 22, 2026. Paperback launch May 4, 2026.
+*Using AI Without Diluting Your Voice.* Thought leadership on maintaining creative and intellectual identity in an AI-augmented world. Kindle published April 22, 2026. Paperback launched May 4, 2026.
 
-[Kindle on Amazon](https://amazon.com) · Paperback May 4, 2026
+[Kindle on Amazon](https://a.co/d/08nbTV6E) · [Paperback on Amazon](https://a.co/d/08nbTV6E)
 
 ---
 
@@ -281,8 +281,8 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 |-----------|---------|--------|
 | Logitech CueBoard | CueBoard Zoom Plugin | Semifinalist: Top 50 of 1,300+ |
 | Google Gemini 3 ($50K) | Sewer Sentinel (StormIQ) | Did not place |
-| Google Live Agent | Adaptive Drive | Results pending |
-| Auth0 | Signal Vault | Results pending |
+| Google Live Agent | Adaptive Drive | Did not place |
+| Auth0 | Signal Vault | Did not place |
 | WebMCP Challenge | Relay | Results pending |
 | DevNetwork API + Cloud + AI Hackathon 2026 | Regulation Radar | Results pending |
 
@@ -303,7 +303,7 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 
 ## Also Built
 
-- **Claude Architect Study Hall**: PWA study companion for Claude Certified Architect Foundations exam. Leitner 5-box spaced repetition, 6 interactive widgets, day gating, review deck. Pairs with System Architect Exam Pro. Screen reader accessible. [Repo](https://github.com/TKHatton/Claude-Architect-Study-Hall) · `Vanilla JS` `ES Modules` `Supabase` `PWA`
+- **Claude Architect Study Hall**: PWA study companion for Claude Certified Architect Foundations exam. Leitner 5-box spaced repetition, 6 interactive widgets, day gating, review deck. Pairs with System Architect Exam Pro. Screen reader accessible. [Live](https://claude-architect-study-hall.netlify.app/) · [Repo](https://github.com/TKHatton/Claude-Architect-Study-Hall) · `Vanilla JS` `ES Modules` `Supabase` `PWA`
 - **Daily Clarity**: AI thinking assistant with 5 tools: Mind Dump, Find Words, Decision Helper, Write The Hard Thing, Quick Reset. Free. [Live](https://dailyclarity.netlify.app/) · [Repo](https://github.com/TKHatton/Daily-Clarity) · `React` `TypeScript` `Gemini API`
 
   <a href="https://dailyclarity.netlify.app/"><img src="screenshots/daily-clarity_live.png" alt="Daily Clarity landing page" width="49%"></a> <a href="https://dailyclarity.netlify.app/"><img src="screenshots/2026-04-19_daily-clarity_dashboard.png" alt="Daily Clarity dashboard" width="49%"></a>
