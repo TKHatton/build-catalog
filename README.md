@@ -141,7 +141,7 @@ Built for the WebMCP Challenge. Lets someone brief a scoped delegate agent befor
 
 ![Status](https://img.shields.io/badge/Status-Functional-informational) ![Started](https://img.shields.io/badge/Started-2026-informational)
 
-Built for the DevNetwork API + Cloud + AI Hackathon. Models each company's compliance obligations as a dependency graph; when a public rule changes, it walks the graph from the affected node outward, auto-resolving obligations that genuinely share a mechanism and flagging the ones that only look related. Privacy is structural, not a filter: regulatory text lives in a shared public pool while each tenant's footprint, alerts, and signed compliance briefs stay in their own scoped pool, and evaluation always happens by bringing a public rule into a tenant's private scope. Four sponsor integrations wired end to end against live credentials: Xano for the entire backend (10 tables, ~23 endpoints), Foxit for a working PDF-to-eSign pipeline on every compliance brief, Nutrient for confidence-scored extraction on regulatory text, and SerpApi for autonomous change monitoring. 46 tests, largely integration tests against the live Xano workspace.
+Built for the DevNetwork API + Cloud + AI Hackathon, finished but not submitted in time. Models each company's compliance obligations as a dependency graph; when a public rule changes, it walks the graph from the affected node outward, auto-resolving obligations that genuinely share a mechanism and flagging the ones that only look related. Privacy is structural, not a filter: regulatory text lives in a shared public pool while each tenant's footprint, alerts, and signed compliance briefs stay in their own scoped pool, and evaluation always happens by bringing a public rule into a tenant's private scope. Four sponsor integrations wired end to end against live credentials: Xano for the entire backend (10 tables, ~23 endpoints), Foxit for a working PDF-to-eSign pipeline on every compliance brief, Nutrient for confidence-scored extraction on regulatory text, and SerpApi for autonomous change monitoring. 46 tests, largely integration tests against the live Xano workspace.
 
 `TypeScript` `Next.js` `Xano` `Foxit` `Nutrient` `SerpApi`
 
@@ -284,7 +284,9 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 | Google Live Agent | Adaptive Drive | Did not place |
 | Auth0 | Signal Vault | Did not place |
 | WebMCP Challenge | Relay | Results pending |
-| DevNetwork API + Cloud + AI Hackathon 2026 | Regulation Radar | Results pending |
+| DevNetwork API + Cloud + AI Hackathon 2026 | Regulation Radar | Built, not submitted |
+| All Things Agentic Hackathon (Google) | OnboardFlow | Results pending, announced Oct 8 |
+| All Things Agentic Hackathon (Google) | Blackbox | Results pending, announced Oct 8 |
 
 ---
 
