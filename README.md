@@ -1,3 +1,5 @@
+<!-- prose-check: off — file quotes an exact product title containing "Real Job" -->
+
 # What I Build
 
 I design and deploy AI-powered systems that run in production: multi-agent platforms, municipal compliance tools, content operations, and the internal infrastructure that keeps it all coordinated. Not prototypes. Not demos. Shipped.
@@ -21,7 +23,7 @@ I design and deploy AI-powered systems that run in production: multi-agent platf
 
 ![Status](https://img.shields.io/badge/Status-Production-success) ![Started](https://img.shields.io/badge/Started-2023-informational) [![Live](https://img.shields.io/badge/Live-signalstructure.ai-blue)](https://signalstructure.ai)
 
-Full AI discoverability platform with four production MCP servers (Signal Watch, Signal Pulse, Signal Advisor, Knowledge Base) connected directly into Claude. Scans websites for schema markup quality, checks AI platform mentions across every major model, and generates prioritized action plans. Multi-tenant client portal has three role-based dashboards (owner, client, VA), automated lead generation, and a research-backed white paper on AI discoverability. The public site also registers its own WebMCP tools directly on the page (`get_business_facts`, `get_services`, `recommend_service`, `ask_advisor`, `get_our_score_history`, and one action tool that always confirms with the visitor before it does anything), so a browser AI agent can query the business and act on a visitor's behalf without guessing.
+Full AI discoverability platform with four production MCP servers (Signal Watch, Signal Pulse, Signal Advisor, Knowledge Base) connected directly into Claude. Scans websites for schema markup quality, checks AI platform mentions across every major model, and generates prioritized action plans. Multi-tenant client portal has three role-based dashboards (owner, client, VA), automated lead generation, and a research-backed white paper on AI discoverability. Two of the tools, [Signal Pulse](https://chatgpt.com/plugins/plugin_asdk_app_6a4000b637448191adffbd1caf6dd878) and [Signal Advisor](https://chatgpt.com/plugins/plugin_asdk_app_6a9c6d0645588191bb66d8133266c236), are published, live listings in the ChatGPT App Directory. The public site also registers its own WebMCP tools directly on the page (`get_business_facts`, `get_services`, `recommend_service`, `ask_advisor`, `get_our_score_history`, and one action tool that always confirms with the visitor before it does anything), so a browser AI agent can query the business and act on a visitor's behalf without guessing.
 
 `Python` `FastAPI` `Supabase` `Railway` `MCP Protocol` `WebMCP` `Claude API`
 
@@ -268,6 +270,15 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 
 ---
 
+### Course Canon Series: Short AI Courses
+Four 7-email drip courses, each built through my own Course Canon pipeline (generation, delivery, and Gumroad listing copy all automated) and each priced at $47: *AI 101: What It Is and Why It Matters*, *AI for Job Seekers*, *Build Your First AI Agent That Can Complete a Real Job*, and *Give Your AI Agent Tools, Memory, and Data*. Content is finished and QC'd; publishing to Gumroad is pending.
+
+**$47 each** · Gumroad listings pending publish
+
+`Next.js` `Python` `Supabase` `Resend` `Gumroad`
+
+---
+
 ## Infrastructure
 
 ### MAOS: Meta-Agentic Operating System
@@ -280,7 +291,7 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 | Hackathon | Project | Result |
 |-----------|---------|--------|
 | Logitech CueBoard | CueBoard Zoom Plugin | Semifinalist: Top 50 of 1,300+ |
-| Google Gemini 3 ($50K) | Sewer Sentinel (StormIQ) | Did not place |
+| Google Gemini 3 | Sewer Sentinel (StormIQ) | Did not place |
 | Google Live Agent | Adaptive Drive | Did not place |
 | Auth0 | Signal Vault | Did not place |
 | WebMCP Challenge | Relay | Results pending |
