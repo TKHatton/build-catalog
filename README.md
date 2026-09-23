@@ -123,6 +123,32 @@ Watches 9 listing sources nationwide, dedupes the same vehicle appearing across 
 
 ---
 
+### Relay: WebMCP-Native Delegate Agent
+> An out-of-office agent with enforced limits, not just an auto-reply.
+
+![Status](https://img.shields.io/badge/Status-Live-success) ![Started](https://img.shields.io/badge/Started-2026-informational) [![Live](https://img.shields.io/badge/Live-relay--webmcp.netlify.app-blue)](https://relay-webmcp.netlify.app/) [![Repo](https://img.shields.io/badge/Repo-Public-blue)](https://github.com/TKHatton/relay-webmcp)
+
+Built for the WebMCP Challenge. Lets someone brief a scoped delegate agent before going offline: a short interview drafts the boundary configuration (autonomous actions under a dollar cap, flagged actions that go to a named backup human, hard refusals) instead of making the person write policy from scratch. A missed check-in, a scheduled window, or a manual switch arms the delegate, which then answers coworkers, clients, or other agents inside those limits and logs every decision in plain language. The core technical bet: the page computes a different tool surface per visitor identity and per relay state, live in the browser via `document.modelContext.registerTool`, instead of a static server-side tool list: the principal sees setup tools, a recipient sees exactly one scoped tool, and the surface changes as the relay moves from draft to armed to active.
+
+`TypeScript` `Next.js` `WebMCP` `Claude API`
+
+[Live](https://relay-webmcp.netlify.app/) · [Repo](https://github.com/TKHatton/relay-webmcp)
+
+---
+
+### Regulation Radar: Compliance Change Intelligence
+> Computes what actually breaks downstream when a regulation changes, instead of re-auditing everything from scratch.
+
+![Status](https://img.shields.io/badge/Status-Functional-informational) ![Started](https://img.shields.io/badge/Started-2026-informational)
+
+Built for the DevNetwork API + Cloud + AI Hackathon. Models each company's compliance obligations as a dependency graph; when a public rule changes, it walks the graph from the affected node outward, auto-resolving obligations that genuinely share a mechanism and flagging the ones that only look related. Privacy is structural, not a filter: regulatory text lives in a shared public pool while each tenant's footprint, alerts, and signed compliance briefs stay in their own scoped pool, and evaluation always happens by bringing a public rule into a tenant's private scope. Four sponsor integrations wired end to end against live credentials: Xano for the entire backend (10 tables, ~23 endpoints), Foxit for a working PDF-to-eSign pipeline on every compliance brief, Nutrient for confidence-scored extraction on regulatory text, and SerpApi for autonomous change monitoring. 46 tests, largely integration tests against the live Xano workspace.
+
+`TypeScript` `Next.js` `Xano` `Foxit` `Nutrient` `SerpApi`
+
+[Repo](https://github.com/TKHatton/regulation-radar)
+
+---
+
 ## Life OS: Personal Infrastructure
 
 The systems that let me run five ventures in parallel without losing context, dropping leads, or missing deadlines. All deployed, all running daily.
@@ -257,6 +283,8 @@ Desktop app that scans folders and sorts files into clean structures based on ru
 | Google Gemini 3 ($50K) | Sewer Sentinel (StormIQ) | Did not place |
 | Google Live Agent | Adaptive Drive | Results pending |
 | Auth0 | Signal Vault | Results pending |
+| WebMCP Challenge | Relay | Results pending |
+| DevNetwork API + Cloud + AI Hackathon 2026 | Regulation Radar | Results pending |
 
 ---
 
